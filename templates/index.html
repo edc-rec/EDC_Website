@@ -10,33 +10,72 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="static/style.css">
-</head>
-<body>
 
-<nav class="navbar navbar-dark bg-dark">
+  <style>
+    body {
+      position: relative;
+    }
+
+    .section {
+      padding: 50px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-dark bg-dark navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar" color:white></span>></span>
+        <span class="icon-bar" color:white></span>
+        <span class="icon-bar" color:white></span>                        
       </button>
-      <a class="navbar-brand" href="#">E-Cell of REC</a>
+      <a class="navbar-brand" href="/">E-Cell of REC</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="/">Home</a></li>
         <li><a href="/aboutus">Who We Are</a></li>
-        <li><a href="#">Masterpiece Moments</a></li>
-        <li><a href="#">The Entrepreneurs Within</a></li>
-        <li><a href="#">VisionVault Exchange</a></li>
+        <li><a href="#masterpiece-moments">Masterpiece Moments</a></li>
+        <li><a href="#entrepreneurs-within">The Entrepreneurs Within</a></li>
+        <li><a href="#visionvault-exchange">VisionVault Exchange</a></li>
       </ul>
     </div>
   </div>
 </nav>
-  
-<div class="container">
-  
+
+<div id="home" class="section">
+  <h2>Home Section</h2>
+  <p>This is the home section.</p>
+</div>
+
+<div id="who-we-are" class="section">
+  <h2>Who We Are</h2>
+  <p>This is the "Who We Are" section.</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="masterpiece-moments" class="section">
+  <h2>Masterpiece Moments</h2>
+  <p>This is the "Masterpiece Moments" section.</p>
+</div>
+
+<div id="entrepreneurs-within" class="section">
+  <h2>The Entrepreneurs Within</h2>
+  <p>This is the "The Entrepreneurs Within" section.</p>
+</div>
+
+<div id="visionvault-exchange" class="section">
+  <h2>VisionVault Exchange</h2>
+  <p>This is the "VisionVault Exchange" section.</p>
 </div>
 
 </body>
