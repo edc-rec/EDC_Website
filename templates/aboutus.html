@@ -5,181 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EDC Evolution</title>
+  <link rel="stylesheet" href="static/about.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    </script> 
-  <style>
-@import url('https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One');
-body{
-    background-color:black;
-}
- .timeline {
-	 display: flex;
-	 margin: 0 auto;
-	 flex-wrap: wrap;
-	 flex-direction: column;
-	 max-width: 700px;
-	 position: relative;
-}
- .timeline__content-title {
-	 font-weight: normal;
-	 font-size: 66px;
-	 margin: -10px 0 0 0;
-	 transition: 0.4s;
-	 padding: 0 10px;
-	 box-sizing: border-box;
-	 font-family: 'Pathway Gothic One', sans-serif;
-	 color: #fff;
-}
- .timeline__content-desc {
-	 margin: 0;
-	 font-size: 15px;
-	 box-sizing: border-box;
-	 color: rgba(255, 255, 255, .7);
-	 font-family: Cardo;
-	 font-weight: normal;
-	 line-height: 25px;
-}
- .timeline:before {
-	 position: absolute;
-	 left: 50%;
-	 width: 2px;
-	 height: 100%;
-	 margin-left: -1px;
-	 content: "";
-	 background: rgba(255, 255, 255, .07);
-}
- @media only screen and (max-width: 767px) {
-	 .timeline:before {
-		 left: 40px;
-	}
-}
- .timeline-item {
-	 padding: 40px 0;
-	 opacity: 0.3;
-	 filter: blur(2px);
-	 transition: 0.5s;
-	 box-sizing: border-box;
-	 width: calc(50% - 40px);
-	 display: flex;
-	 position: relative;
-	 transform: translateY(-80px);
-}
- .timeline-item:before {
-	 content: attr(data-text);
-	 letter-spacing: 3px;
-	 width: 100%;
-	 position: absolute;
-	 color: rgba(255, 255, 255, .5);
-	 font-size: 30px;
-	 font-family: 'Pathway Gothic One', sans-serif;
-	 border-left: 2px solid rgba(255, 255, 255, .5);
-	 top: 70%;
-	 margin-top: -5px;
-	 padding-left: 15px;
-	 opacity: 0;
-	 right: calc(-100% - 56px);
-}
- .timeline-item:nth-child(even) {
-	 align-self: flex-end;
-}
- .timeline-item:nth-child(even):before {
-	 right: auto;
-	 text-align: right;
-	 left: calc(-100% - 56px);
-	 padding-left: 0;
-	 border-left: none;
-	 border-right: 2px solid rgba(255, 255, 255, .5);
-	 padding-right: 15px;
-}
- .timeline-item--active {
-	 opacity: 1;
-	 transform: translateY(0);
-	 filter: blur(0px);
-}
- .timeline-item--active:before {
-	 top: 50%;
-	 transition: 0.3s all 0.2s;
-	 opacity: 1;
-}
- .timeline-item--active .timeline__content-title {
-	 margin: -50px 0 20px 0;
-}
- @media only screen and (max-width: 767px) {
-	 .timeline-item {
-		 align-self: baseline !important;
-		 width: 100%;
-		 padding: 0 30px 150px 80px;
-	}
-	 .timeline-item:before {
-		 left: 10px !important;
-		 padding: 0 !important;
-		 top: 50px;
-		 text-align: center !important;
-		 width: 60px;
-		 border: none !important;
-	}
-	 .timeline-item:last-child {
-		 padding-bottom: 40px;
-	}
-}
- .timeline__img {
-	 max-width: 100%;
-	 box-shadow: 0 10px 15px rgba(62, 61, 61, 0.4);
-}
- .timeline-container {
-	 width: 100%;
-	 position: relative;
-	 padding: 80px 0;
-	 transition: 0.3s ease 0s;
-	 background-attachment: fixed;
-	 background-size: cover;
-}
- .timeline-container:before {
-	 position: absolute;
-	 left: 0;
-	 top: 0;
-	 width: 100%;
-	 height: 100%;
-	 background: rgba(8, 8, 8, 0.8);
-	 content: "";
-}
- .timeline-header {
-	 width: 100%;
-	 text-align: center;
-	 margin-bottom: 80px;
-	 position: relative;
-}
- .timeline-header__title {
-	 color: #fff;
-	 font-size: 46px;
-	 font-family: Cardo;
-	 font-weight: normal;
-	 margin: 0;
-}
- .timeline-header__subtitle {
-	 color: rgba(255, 255, 255, .5);
-	 font-family: 'Pathway Gothic One', sans-serif;
-	 font-size: 16px;
-	 letter-spacing: 5px;
-	 margin: 10px 0 0 0;
-	 font-weight: normal;
-}
- .demo-footer {
-	 padding: 60px 0;
-	 text-align: center;
-}
- .demo-footer a {
-	 color: #999;
-	 display: inline-block;
-	 font-family: Cardo;
-}
- 
-  </style>
-
+	<style>
+		body{
+			background-color:black;
+		}
+	</style>
 
 </head>
 
@@ -207,106 +42,140 @@ body{
 		</div>
 	  </nav>
 	  
-    <div class="timeline-container" id="timeline-1">
-        <div class="timeline-header">
-            <h2 class="timeline-header__title">Footprints in Time</h2>
-            <h3 class="timeline-header__subtitle">EDC's Commanding Entrepreneurial Narrative</h3>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item" data-text="2015-2016">
-                <div class="timeline__content"><img class="timeline__img" src="" />
-                    <h2 class="timeline__content-title">Founding Years</h2>
-                    <p class="timeline__content-desc">The seeds of entrepreneurship were sown in 2015 as Rajalakshmi Engineering College (REC) envisioned a platform to nurture entrepreneurial spirit among students.
-                    <br><br>EDC was established with a vision to empower students, create job opportunities, and contribute to the nation's development.<br><br>Initial activities included meetings with faculty, agenda discussions, and the launch of E-Awareness campaigns.</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-text="2016-2018" >
-                <div class="timeline__content"><img class="timeline__img" src="{{img1}}" />
-                    <h2 class="timeline__content-title">Growth and Expansion</h2>
-                    <p class="timeline__content-desc">EDC quickly gained momentum, organizing events like E-Conclave, E-Awareness campaigns, and E-Week, creating a buzz around entrepreneurship on the campus.<br><br>The launch of the EDC Course marked a pivotal moment, providing structured education on entrepreneurship to REC students.<br><br>The board members actively engaged in faculty meetings, and an E-Cell Membership drive further solidified the EDC's presence.</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-text="2018-2020">
-                <div class="timeline__content"><img class="timeline__img" src="" />
-                    <h2 class="timeline__content-title">Venture and Innovation</h2>
-                    <p class="timeline__content-desc">The years 2018-2019 witnessed the launch of VENTURE'18, a Business Hackathon, showcasing REC's commitment to fostering innovation.<br><br>E-Summit in 2020, hosted in collaboration with IIT Madras, demonstrated the college's commitment to national-level engagement in entrepreneurship.</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-text="2020-2022">
-                <div class="timeline__content"><img class="timeline__img" src="" />
-                    <h2 class="timeline__content-title">Adapting to Challenges</h2>
-                    <p class="timeline__content-desc">Despite the challenges posed by the COVID-19 pandemic, EDC continued its mission through online events like EQ-TRIVIA'20 and Eclub'sfter C'19.<br><br>The Entrepreneurial Opportunities After COVID-19 initiative reflected the cell's adaptability and resilience.</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-text="2022-2023">
-                <div class="timeline__content"><img class="timeline__img" src="" />
-                    <h2 class="timeline__content-title">Expanding Horizons</h2>
-                    <p class="timeline__content-desc">The Entrepreneurship Development Cell entered the academic year 2022-2023 with a renewed focus on impactful initiatives.<br><br>The recruitment drive, national-level symposium E STAR 2022, and events like PITCH DECK EVENT at IIT Bombay NEC showcased REC's commitment to expanding the entrepreneurial ecosystem.<br><br>Notable incubation services were offered to promising startups like Ingènuir's Café, Student's Corner, and Magnum Technologies.</p>
-                </div>
-            </div>
-            
-        </div>
-    </div>
+	  <div class="intro">
+		<h1>Footprints in Time</h1>
+	  </div>
+	  
+	  <div class="intro">
+		<h3>EDC's Commanding Entrepreneurial Narrative</h3>
+	  </div>
+	  
+	  <main>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>Founding Years</h2>
+			  <time>2015</time> - 2016
+			</header>
+			<p>The seeds of entrepreneurship were sown in 2015 as Rajalakshmi Engineering College (REC) envisioned a platform to nurture entrepreneurial spirit among students.<br><br>EDC was established with a vision to empower students, create job opportunities, and contribute to the nation's development.<br><br>Initial activities included meetings with faculty, agenda discussions, and the launch of E-Awareness campaigns.
+			</p>
+			<img src="{{img1}}" alt="" />
+		  </div>
+		</article>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>E-conclave'16</h2>
+			   
+			</header>
+			<p>March 10th and 11th, 2016 witnessed one of the greatest events, E-Conclave'16 that inspired and exhilarated the idea of entrepreneurship.
+			<br><br>Our event featured a wide range of activities, including guest lectures, panel discussions, motivational talks, workshops, debates and engaging showcases of start-ups.<br><br>With an impressive turnout of approximately 500 participants and the participation of 15 innovative start-ups, our event was a resounding success.<br><br>This achievement is a testament to the collaborative efforts of our dedicated team, with unwavering support from the management, effective coordination by the E-Cell, and the remarkable dedication of our students.<br><br>
+			We are proud to announce that our event has earned national recognition as a prestigious E-Conclave hosted at REC.</p>
+			<img src="{{img2}}" alt="" />
+		  </div>
+		</article>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>E- Week 2016</h2>
+			</header>
+			<p>"E Week '16" took place over four dynamic days in April 2016, offering an array of engaging activities, including workshops, panel discussions, and seminars.<br><br>The event had a clear focus on promoting entrepreneurship, innovation, and collaboration, aiming to inspire and educate participants in these areas.<br><br>"E Week '16" attracted a diverse audience, including students, entrepreneurs, and professionals, creating a platform for meaningful knowledge exchange and networking opportunities.<br><br>The event left a lasting impact by fostering a spirit of creativity and entrepreneurial enthusiasm, contributing to the growth and development of the entrepreneurial community it targeted.
+			</p>
+			<img src="{{img3}}" alt="" />
+		  </div>
+		</article>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>E-WEEK 2018</h2>
+			</header>
+			<p>Day 1: Motivational speaker Jaikanth M.C. shared his success story and valuable insights, kicking off E-Week on an inspiring note.<br><br>Day 2: The day revolved around expanding the mind through new experiences, featuring entrepreneurial games and a business quiz.<br><br>Day 3: Participants engaged in a business quiz, highlighting the importance of knowledge in the business world.<br><br>Day 4: The focus shifted to risk management, with various games testing decision-making abilities under pressure.<br><br>Day 5: Similar to "Shark Tank," participants pitched their business ideas to a judging panel, making it the ultimate test of entrepreneurship skills. </p>
+			<img src="{{img4}}" alt="" />
+		  </div>
+		</article>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>Compact cassette</h2>
+			  <time>1971</time> - Philips
+			</header>
+			<p>A small, magnetic tape cassette used for storing data.</p>
+			<img src="https://assets.codepen.io/159218/compact-cassette.jpg" alt="" />
+		  </div>
+		</article>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>Zip drive</h2>
+			  <time>1980</time> - Iomega
+			</header>
+			<p>A removable disk drive with a capacity of up to 100 MB.</p>
+			<img src="https://assets.codepen.io/159218/zip-drive.jpg" alt="" />
+		  </div>
+		</article>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>CD-ROM</h2>
+			  <time>1984</time> - James Russell
+			</header>
+			<p>A compact disc that can store up to 700 MB of data.</p>
+			<img src="https://assets.codepen.io/159218/cd-rom.png" alt="" />
+		  </div>
+		</article>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>DVD-ROM</h2>
+			  <time>1994</time> - Kenji Kashiwaya
+			</header>
+			<p>A digital versatile disc that can store up to 4.7 GB of data.</p>
+			<img src="https://assets.codepen.io/159218/dvd-rom.png" alt="" />
+		  </div>
+		</article>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>Blu-ray Disc</h2>
+			  <time>1995</time> - Sony and Philips
+			</header>
+			<p>A high-definition optical disc that can store up to 25 GB of data.</p>
+			<img src="https://assets.codepen.io/159218/blu-ray.png" alt="" />
+		  </div>
+		</article>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>Solid-state drive</h2>
+			  <time>2000</time> - SanDisk
+			</header>
+			<p>A type of storage device that uses flash memory to store data.</p>
+			<img src="https://assets.codepen.io/159218/ssd.jpg" alt="" />
+		  </div>
+		</article>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>USB flash drive</h2>
+			  <time>2003</time> - IBM
+			</header>
+			<p> A small, portable storage device that uses flash memory to store data.</p>
+			<img src="https://assets.codepen.io/159218/usb-flash-drive.jpg" alt="" />
+		  </div>
+		</article>
+		<article class="stop">
+		  <div class="text">
+			<header>
+			  <h2>Cloud storage</h2>
+			  <time>2007</time> - Amazon Web Services
+			</header>
+			<p>A service that allows users to store data on remote servers.</p>
+			<img src="https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODk2MDA3NDJ8&ixlib=rb-4.0.3&q=85" alt="" />
+		  </div>
+		</article>
+	  </main>
 
-    <script>
-        (function($) {
-      $.fn.timeline = function() {
-        var selectors = {
-          id: $(this),
-          item: $(this).find(".timeline-item"),
-          activeClass: "timeline-item--active",
-          img: ".timeline__img"
-        };
-        selectors.item.eq(0).addClass(selectors.activeClass);
-        selectors.id.css(
-          "background-image",
-          "url(" +
-            selectors.item
-              .first()
-              .find(selectors.img)
-              .attr("src") +
-            ")"
-        );
-        var itemLength = selectors.item.length;
-        $(window).scroll(function() {
-          var max, min;
-          var pos = $(this).scrollTop();
-          selectors.item.each(function(i) {
-            min = $(this).offset().top;
-            max = $(this).height() + $(this).offset().top;
-            var that = $(this);
-            if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
-              selectors.item.removeClass(selectors.activeClass);
-              selectors.id.css(
-                "background-image",
-                "url(" +
-                  selectors.item
-                    .last()
-                    .find(selectors.img)
-                    .attr("src") +
-                  ")"
-              );
-              selectors.item.last().addClass(selectors.activeClass);
-            } else if (pos <= max - 40 && pos >= min) {
-              selectors.id.css(
-                "background-image",
-                "url(" +
-                  $(this)
-                    .find(selectors.img)
-                    .attr("src") +
-                  ")"
-              );
-              selectors.item.removeClass(selectors.activeClass);
-              $(this).addClass(selectors.activeClass);
-            }
-          });
-        });
-      };
-    })(jQuery);
     
-    $("#timeline-1").timeline();
-    
-      </script>
 
 </body>
 
