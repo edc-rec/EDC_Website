@@ -11,11 +11,13 @@ t2 = os.path.join(app.config['icons'], 'conclave16.png')
 t3 = os.path.join(app.config['icons'], 'E_week16.png')
 t4 = os.path.join(app.config['icons'], 'e_week18.jpg')
 
+l1 = os.path.join(app.config['icons'], 'lamp.png')
+l2 = os.path.join(app.config['icons'], 'light.png')
 
 
 @app.route('/')
 def hello():
-    return render_template('index.html')
+    return render_template('index.html',img1=l1,img2=l2)
 
 @app.route('/aboutus')
 def aboutus():

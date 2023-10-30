@@ -2,10 +2,93 @@ body {
     background-color:rgb(0, 0, 0);
     position: relative;
 }
+/* home css */
+.hero{
+  background: #000000;
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+#pull-chain {
+  display: none; /* no need to display checkbox */
+}
+#chain {
+  position: relative;
+  left:8%;
+  border-right: 2px dotted rgb(255, 255, 255);
+  height: 400px;
+  width: 15px;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  transition: height 0.5s;
+}
+#handle {
+  display: block;
+  position: absolute;
+  /* left: width of chain div (15px) + half of border (1px) - radius of handle (8px)*/  
+  left: 8px; 
+  bottom: 0%;
+  background-color: rgb(255, 255, 255);
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  cursor: pointer
+}
+#pull-chain:checked + #chain > #handle {
+  background-color: rgb(255, 255, 255);
+}
+#pull-chain:checked + #chain {
+  height: 300px;
+  border-color: rgb(255, 255, 255);
+}
+.lamp-container{
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 200px;
+}
+.lamp{
+  width: 100%;
+}
+#light{
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  margin-left: -10px;
+  opacity: 10;
+  transition: opacity 0.5s;
+}
+.text-container{
+  max-width: 600px;
+  margin-left: 50%;
+}
+.text-container h1{
+  font-size: 80px;
+  font-weight: 400;
+}
+.text-container a{
+  text-decoration: none;
+  background: #00986f;
+  padding: 14px 40px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
 
+.active span{
+  background: #000000;
+  margin-left: 31px;
+}
+.on{
+  opacity: 1;
+}
 .section {
-    padding: 50px 0;
     color: white;
+    width: 100%;
     text-align: center;
   }
 
@@ -17,7 +100,6 @@ body {
   #who-we-are p {
     font-size: 20px;
     line-height: 1.6;
-    
     text-align:left;
     padding: 20px;
     margin: 0;
