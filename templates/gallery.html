@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Photo Galleries</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/gallery.css">
+    <style>
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">E-Cell of REC</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/aboutus">Who We Are</a></li>
+                    <li><a href="/masterpiecemoments">Masterpiece Moments</a></li>
+                    <li><a href="/team">The Entrepreneurs Within</a></li>
+                    <li><a href="#visionvault-exchange">VisionVault Exchange</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <h1>Event Photo Galleries</h1>
+
+    <div class="event-container">
+        <!-- Event 1 -->
+        <div class="event">
+            <div class="event-title">Event 1</div>
+            <div class="photo-gallery-container">
+                <div class="photo-gallery">
+                    <img src="{{photo1}}" alt="Event 1 Photo 1">
+                    <img src="{{photo2}}" alt="Event 1 Photo 2">
+                    <!-- Add more photos as needed -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="event">
+            <div class="event-title">Event 2</div>
+            <div class="photo-gallery-container">
+                <div class="photo-gallery">
+                    <img src="{{photo1}}" alt="Event 2 Photo 1">
+                    <img src="{{photo2}}" alt="Event 2 Photo 2">
+                    <!-- Add more photos as needed -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more events as needed -->
+    </div>
+
+</body>
+
+</html>
