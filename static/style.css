@@ -1,160 +1,163 @@
+/* Style for index page */
+
 body {
-    background-color:rgb(0, 0, 0);
-    position: relative;
-    font-family: "Open Sans", sans-serif;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
 
+.entry-animation {
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: fadeIn 4s forwards, slideIn 2s forwards;
 }
-/* home css */
-.hero{
-  background: #000000;
-  width: 100%;
-  color: #fff;
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes slideIn {
+  0% {
+      left: -100%; 
+  }
+  100% {
+      left: 10%; 
+  }
+}
+.header {
+  text-align: left;
+  padding: 50px 20px;
+  color:rgb(255, 255, 255);
+}
+
+.logo {
+  font-size: 4em; 
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 4em;
+  font-weight: bold; 
+  margin-top: 10px;
+  color:black;
+}
+
+
+@keyframes slideInButton {
+  0% {
+      transform: translateY(50px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.gradient-background {
+  background: linear-gradient(to right, #1c81c4, #ed2b15);
+  height: 100vh;
+  overflow: hidden;
   position: relative;
 }
-#pull-chain {
-  display: none; /* no need to display checkbox */
-}
-#chain {
-  position: relative;
-  left:8%;
-  border-right: 2px dotted rgb(255, 255, 255);
-  height: 400px;
-  width: 15px;
-  -webkit-transition: height 0.5s;
-  -moz-transition: height 0.5s;
-  transition: height 0.5s;
-}
-#handle {
-  display: block;
-  position: absolute;
-  /* left: width of chain div (15px) + half of border (1px) - radius of handle (8px)*/  
-  left: 8px; 
-  bottom: 0%;
-  background-color: rgb(255, 255, 255);
-  width: 20px;
-  height: 20px;
-  border-radius: 20%;
-  cursor: pointer
-}
-#pull-chain:checked + #chain > #handle {
-  background-color: rgb(255, 255, 255);
-}
-#pull-chain:checked + #chain {
-  height: 300px;
-  border-color: rgb(255, 255, 255);
-}
-.lamp-container{
-  position: absolute;
-  top: 10%;
-  left: 15%;
-  width: 200px;
-}
-.lamp{
-  width: 100%;
-}
-#light{
-  position: absolute;
-  top: 97%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 700px;
-  margin-left: -10px;
-  opacity: 10;
-  transition: opacity 0.5s;
-}
-.text-container{
-  max-width: 600px;
-  margin-left: 50%;
-}
-.text-container h1{
-  font-size: 80px;
-  font-weight: 400;
-}
-.text-container a{
-  text-decoration: none;
-  background: #00986f;
-  padding: 14px 40px;
-  display: inline-block;
-  color: #fff;
+
+.tagline {
   font-size: 18px;
-  margin-top: 30px;
-  border-radius: 30px;
+  margin-top: 10px;
 }
 
-.active span{
-  background: #ffffff;
-  margin-left: 31px;
-}
-.on{
-  opacity: 1;
-}
-.section {
-    color: white;
-    width: 100%;
-    text-align: center;
-  }
 
-  #we_are {
-    color: white;
-    text-align:justify;
-    margin: 10%;
-  }
-  #who-we-are p {
-    font-size: 20px;
-    line-height: 1.6;
-    text-align:left;
-    padding: 20px;
-    margin: 0;
-    border-left: 4px solid #007bff; /* Left border with a color */
-    transition: all 0.3s ease; /* Smooth transition */
-  }
+@media screen and (max-width: 1200px) and (min-width: 565px) {
   
-  #who-we-are p:hover {
-    transform: scale(1.02); /* Slightly scales the paragraph on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
-  }
-  #myNavbar{
-    color: #007bff;
-  }
-  h1,h2{
-    color: #007bff;
-    position: relative;
-    bottom:100px;
-    margin-bottom: 30px;
-  }
-  .subtitle{
-    color: #ffffff;
-    font-family: 'Gill Sans';
-    font-weight: bold;
-    font-size: 20px;
-    position: relative;
-    bottom:100px;
-    margin-bottom: 30px;
-  }
-  .vision-mission {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+}
+
+@media screen and (max-width: 564px) and (min-width: 100px) {
+  .header {
+      padding: 10px;
   }
 
-  .vision-mission-item {
-    width: 45%;
-    background-color: #111;
-    border-radius: 8px;
-    padding: 20px;
-    transition: transform 0.3s ease-in-out;
+  .logo {
+      font-size: 1em;
   }
 
-  .vision-mission-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  .tagline {
+      font-size: 0.5em;
   }
 
-  .vision-mission h3 {
-    color: #007bff;
+  .get-started {
+      margin-top: 30px;
   }
 
-  .vision-mission p {
-    line-height: 1.6;
+
+  button {
+      width: 100%;
+      padding: 1em 20px; 
+      font-size: 16px;
+      height: 50%;
+      margin-top: 10px;
+      position: relative;
+      top: 150px;
+      left:10px;
   }
+
+  
+}
+
+/* nav bar css */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
