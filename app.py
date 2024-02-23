@@ -19,7 +19,6 @@ t4 = os.path.join(app.config['icons'], 'e_week18.jpg')
 
 l1 = os.path.join(app.config['icons'], 'lamp.png')
 l2 = os.path.join(app.config['icons'], 'light.png')
-logo=os.path.join(app.config['icons'], 'logo.png')
 tm1 = os.path.join(app.config['members'], 'karthikaa.jpg')
 tm2 = os.path.join(app.config['members'], 'gokulakrishnan.jpg')
 tm3 = os.path.join(app.config['members'], 'lokchandar.jpg')
@@ -60,7 +59,7 @@ def masterpiecemoments():
 
 @app.route('/team')
 def teampage():
-    return render_template('team.html',img1=tm1,img2=tm2,img3=tm3,img4=tm4,img5=tm5,img6=tm6,img7=tm7,img8=tm8,img9=tm9,img10=tm10,img11=tm11,img12=tm12,img13=tm13,img14=tm14,img15=tm15,img16=tm16,img17=tm17,img18=tm18,img19=tm19,img20=tm20,img21=tm21,img22=tm22,img23=tm23,img24=tm24,img25=tm25,img26=tm26,logo=logo)
+    return render_template('team.html',img1=tm1,img2=tm2,img3=tm3,img4=tm4,img5=tm5,img6=tm6,img7=tm7,img8=tm8,img9=tm9,img10=tm10,img11=tm11,img12=tm12,img13=tm13,img14=tm14,img15=tm15,img16=tm16,img17=tm17,img18=tm18,img19=tm19,img20=tm20,img21=tm21,img22=tm22,img23=tm23,img24=tm24,img25=tm25,img26=tm26)
 
 @app.route('/aboutus')
 def aboutus():
