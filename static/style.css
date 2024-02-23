@@ -45,7 +45,7 @@ body {
 }
 .lamp-container{
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 15%;
   width: 200px;
 }
@@ -118,9 +118,19 @@ body {
   }
   h1,h2{
     color: #007bff;
+    position: relative;
+    bottom:100px;
     margin-bottom: 30px;
   }
-
+  .subtitle{
+    color: #ffffff;
+    font-family: 'Gill Sans';
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    bottom:100px;
+    margin-bottom: 30px;
+  }
   .vision-mission {
     display: flex;
     flex-wrap: wrap;
