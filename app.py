@@ -65,6 +65,10 @@ def teampage():
 def aboutus():
     return render_template('aboutus.html',img1=t1,img2=t2,img3=t3,img4=t4)
 
+@app.route('/visionvault')
+def visionvault():
+    return render_template('visionvault.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True,host="0.0.0.0",use_reloader=False)

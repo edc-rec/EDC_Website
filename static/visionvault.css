@@ -1,0 +1,87 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+    margin: 50px;
+}
+.container-fluid{
+
+    width: 100%;
+}
+#events-container, #startup-ideas-container {
+    flex: 1;
+    padding: 20px ;
+    margin-left: 15px;
+    height: 500px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+#events-container{
+    overflow:auto;
+}
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.event-card, .idea-card {
+    width:100%;
+
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.event-card h2, .idea-card h2 {
+    margin-bottom: 10px;
+    color: #2ecc71;
+}
+
+.registration-link, .idea-submission-link {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 669px) {
+	 
+    
+#container {
+    
+    display: block;
+    align-items: center;
+    padding: auto;
+    
+}
+}

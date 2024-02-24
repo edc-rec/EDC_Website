@@ -43,8 +43,9 @@ body {
 .logo {
   font-size: 2.5em; 
   margin-bottom: 10px;
-  color:aqua;
+  color:rgb(255, 255, 255);
   margin: 0;
+  font-weight: bold;
 }
 
 .tagline {
@@ -52,25 +53,31 @@ body {
   font-weight: bold; 
   margin-top: 5px;
   font-size: 14px;
-  color:aqua;
+  font-weight: bold;
+  color:rgb(255, 255, 255);
 }
 
 
 .card {
-  max-width: 800px;
+  max-width: 900px;
   margin: 20px auto;
-  background-color: rgb(41, 247, 220);
-  color: black;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-family: 'Gill Sans';
   padding: 20px;
+  font-size: 15px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
+
 .vision-mission-item {
-  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Gill Sans';
+
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
@@ -85,6 +92,14 @@ body {
   .card {
       width:80%;
   }
+
+  .logo{
+    font-size:10px;
+  }
+  .tagline{
+    font-size:10px;
+  }
+
 }
 @keyframes slideInButton {
   0% {
