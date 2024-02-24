@@ -4,14 +4,16 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  width: auto;
   background: linear-gradient(to right, #000000, #000000);
   overflow: hidden; 
+  overflow-y: auto; 
 }
 
 .entry-animation {
-  position: fixed;
-  top: 50%;
-  left: 10%;
+  position: relative;
+  width: auto;
+  top:100px;
   transform: translateY(-50%);
   opacity: 0;
   animation: fadeIn 4s forwards, slideIn 2s forwards;
@@ -30,25 +32,60 @@ body {
   }
 }
 .header {
+  max-width: auto;
   text-align: left;
+  margin: 0 auto;
+  height:fit-content;
   padding: 50px 20px;
   color:rgb(255, 255, 255);
 }
 
 .logo {
-  font-size: 4em; 
+  font-size: 2.5em; 
   margin-bottom: 10px;
   color:aqua;
+  margin: 0;
 }
 
 .tagline {
   font-size: 4em;
   font-weight: bold; 
-  margin-top: 10px;
+  margin-top: 5px;
+  font-size: 14px;
   color:aqua;
 }
 
 
+.card {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: rgb(41, 247, 220);
+  color: black;
+  font-weight: bold;
+  font-family: 'Gill Sans';
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.vision-mission-item {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+      width:80%;
+  }
+  .logo{
+    font-size:1em;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .card {
+      width:80%;
+  }
+}
 @keyframes slideInButton {
   0% {
       transform: translateY(50px);
@@ -66,17 +103,14 @@ body {
 }
 
 
-@media screen and (max-width: 1200px) and (min-width: 565px) {
-  
-}
 
 @media screen and (max-width: 564px) and (min-width: 100px) {
   .header {
-      padding: 10px;
+      padding: 50px;
   }
 
   .logo {
-      font-size: 1em;
+      font-size: 2em;
   }
 
   .tagline {
