@@ -6,33 +6,19 @@ body {
     padding: 0;
     display: block;
 }
-
-#container {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-
-    margin: 50px;
-}
-.container-fluid{
-
-    width: 100%;
-}
 #events-container, #startup-ideas-container {
     flex: 1;
     padding: 20px ;
-    margin-left: 15px;
+    overflow: auto;
+    width: 80%;
     height: 500px;
     border: 1px solid white;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-}
-#events-container{
-    overflow:auto;
+    position: relative;
+    left:10%;
 }
 
 .section-title {
@@ -52,6 +38,7 @@ body {
     background: rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
     text-align: center;
+    height:max-content;
 }
 
 .event-card h2, .idea-card h2 {
@@ -87,7 +74,7 @@ a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 20px;
     text-align: center;
